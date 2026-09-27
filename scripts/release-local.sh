@@ -20,7 +20,8 @@ set -euo pipefail
 #   APPCAST_URL        where the appcast is served (must match SUFeedURL)
 #   SITE_DIR           optional local folder the appcast is copied into
 #   SPARKLE_SIGN_UPDATE optional explicit path to Sparkle's sign_update
-# Set NOTARIZE=0 to skip notarization.
+# Set NOTARIZE=0 to skip notarization, SKIP_APPCAST=1 to skip the Sparkle signature and
+# the appcast (the zip is still built, notarized and stapled).
 #
 # Version/build are taken from the project as-is; bump MARKETING_VERSION /
 # CURRENT_PROJECT_VERSION in Xcode before releasing.
@@ -29,9 +30,13 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 cd "${PROJECT_ROOT}"
 
-if [[ -f .env ]]; then
+# Credentials: .env, else $HUD_ENV_FILE, else ~/.config/machud/release.env (the MacHUD
+# family's release credentials; see hudkit/docs/CONVENTIONS.md, "Releasing").
+ENV_FILE=".env"
+[[ -f "${ENV_FILE}" ]] || ENV_FILE="${HUD_ENV_FILE:-${HOME}/.config/machud/release.env}"
+if [[ -f "${ENV_FILE}" ]]; then
   set -a
-  source .env
+  source "${ENV_FILE}"
   set +a
 fi
 
@@ -231,6 +236,15 @@ APP_BASENAME="$(basename "${APP_PATH}")"
 ( cd "${APP_PARENT_DIR}" && /usr/bin/zip --symlinks --recurse-paths -X -q "${ZIP_ABS_PATH}" "${APP_BASENAME}" )
 
 ZIP_SIZE=$(stat -f%z "${ZIP_PATH}")
+
+if [[ "${SKIP_APPCAST:-0}" == "1" ]]; then
+  echo ""
+  echo "==> Done (SKIP_APPCAST=1: no Sparkle signature, appcast unchanged)"
+  echo "Build:    ${ZIP_PATH} (${ZIP_SIZE} bytes, sha256 $(shasum -a 256 "${ZIP_PATH}" | cut -d' ' -f1))"
+  echo "Version:  ${VERSION} (${BUILD_NUMBER})"
+  echo "Download: $(download_url "${VERSION}")"
+  exit 0
+fi
 
 echo "==> Generating Sparkle signature"
 SIGN_UPDATE="$(find_sign_update)" || {

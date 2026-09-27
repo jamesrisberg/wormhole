@@ -6,6 +6,9 @@ Sparkle, and prepends an item to `releases/appcast.xml`.
 
 ## One-time setup
 
+Credentials come from `.env`, else `$HUD_ENV_FILE`, else
+`~/.config/machud/release.env` (shared with the MacHUD apps' `hud-release.sh`).
+
 1. `cp .env.example .env` and fill in `APPLE_TEAM_ID`, `APPLE_ID`,
    `APPLE_APP_SPECIFIC_PASSWORD`, and `DOWNLOAD_BASE_URL`
    (for GitHub Releases: `https://github.com/<owner>/wormhole/releases/download`).
@@ -22,7 +25,8 @@ Sparkle, and prepends an item to `releases/appcast.xml`.
 1. Bump `MARKETING_VERSION` and `CURRENT_PROJECT_VERSION` in Xcode, write the
    same version to `VERSION` (it mirrors `MARKETING_VERSION`), and move
    `[Unreleased]` in `CHANGELOG.md` into a `## [<version>] - <date>` section.
-2. `scripts/release-local.sh` (use `NOTARIZE=0` for a dry run).
+2. `scripts/release-local.sh` (use `NOTARIZE=0` for a dry run; `SKIP_APPCAST=1` builds,
+   notarizes and zips without the Sparkle signature and appcast item).
 3. Upload `build/wormhole.zip` to a GitHub release tagged `v<version>`:
    `gh release create v<version> build/wormhole.zip --title "Wormhole <version>"`.
 4. Publish `releases/appcast.xml` at `APPCAST_URL` (set `SITE_DIR` to have the
