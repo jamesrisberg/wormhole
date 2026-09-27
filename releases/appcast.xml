@@ -1,0 +1,62 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>wormhole</title>
+        <item>
+            <title>1.2.0</title>
+            <pubDate>Fri, 28 Aug 2026 13:32:29 -0400</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/jamesrisberg/wormhole/releases/download/v1.2.0/wormhole.zip" length="12765746" type="application/octet-stream" sparkle:edSignature="m0eIQ7Tm7r0WrLEvZsnm29VD60VUak1eRNmdU46jFtFdYh13on6pelKAEN18sA8gNAptOLLeAHnDDsvQDC+pBg=="/>
+        </item>
+        <item>
+            <title>1.1.0</title>
+            <pubDate>Tue, 07 Jul 2026 21:24:48 -0400</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/jamesrisberg/wormhole/releases/download/v1.1.0/wormhole.zip" length="12578689" type="application/octet-stream" sparkle:edSignature="087H6vUG+IUAENaLCM+cOKo5rUNOwQ6OGXbE5KKfW1q+7eNZYoxn+Wmw5WaCqE9oNpt0HMYPurDXw+Q9fthUBw=="/>
+        </item>
+        <item>
+            <title>1.0.1</title>
+            <pubDate>Sat, 01 Mar 2025 17:02:36 -0800</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/jamesrisberg/wormhole/releases/download/v1.0.1/wormhole.zip" length="12448314" type="application/octet-stream" sparkle:edSignature="YVx/4uErRL6Qxg+ezzwqvxLozR+rDg6Ru70ulP6L8Cu68u2ooRdMGaaDNoqnyAbD/6k4mahPfeF83p+MTkkOAQ=="/>
+        </item>
+        <item>
+            <title>1.0</title>
+            <pubDate>Sun, 23 Feb 2025 22:40:43 -0800</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/jamesrisberg/wormhole/releases/download/v1.0/wormhole.zip" length="12447731" type="application/octet-stream" sparkle:edSignature="RmslUXcCKyXVEAyKfOX1XNDisuTa96zrvFqyT28/MywhWEW5nkAt7gmuIghhTRDE+v3hWiM6oisafOSztvgICA=="/>
+        </item>
+        <item>
+            <title>1.5</title>
+            <pubDate>Wed, 12 Feb 2025 19:17:03 -0800</pubDate>
+            <sparkle:version>1.5</sparkle:version>
+            <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/jamesrisberg/wormhole/releases/download/v1.5/wormhole.zip" length="12447185" type="application/octet-stream" sparkle:edSignature="zqfi/k2SB3HRo5V0QX8DpGEt+6Fn6e1GPSbD+onSIyL58U/EaD6EE9LkIPGa7O1K3gGB1Kag3V0SIsD+1puwDQ=="/>
+        </item>
+        <item>
+            <title>1.4</title>
+            <pubDate>Wed, 12 Feb 2025 00:50:12 -0800</pubDate>
+            <sparkle:version>1.4</sparkle:version>
+            <sparkle:shortVersionString>1.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/jamesrisberg/wormhole/releases/download/v1.4/wormhole.zip" length="12461808" type="application/octet-stream" sparkle:edSignature="jmkOAymwNbQOMJD0mUvnP9e+GOj+HCfW8Zo9EnjscsFvVTW5lGaxgH9VrNBIX+vnwX0raaF/elXzHQ6WgumVBQ=="/>
+        </item>
+        <item>
+            <title>1.3</title>
+            <pubDate>Mon, 10 Feb 2025 19:42:36 -0800</pubDate>
+            <sparkle:version>1.3</sparkle:version>
+            <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.2</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/jamesrisberg/wormhole/releases/download/v1.3/wormhole.zip" length="1223717" type="application/octet-stream" sparkle:edSignature="MMV0xFJgXuBEDdaRw3AJHoJ0YQBIrI5LrCOAZG07yDK0hwsf+TfjlmfAcGmnE0ErcCevEoRWQ7S+Oy6CRVpeAg=="/>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EE504D72D583D0E0042B333 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 6EE504D62D583D0E0042B333 /* Sparkle */; };
+		A1C11D012D583CA00042B00B /* portal in Embed portal CLI */ = {isa = PBXBuildFile; fileRef = A1C11D012D583CA00042B001 /* portal */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B7D00A012E8A10000042C001 /* HUDKit in Frameworks */ = {isa = PBXBuildFile; productRef = B7D00A012E8A10000042C003 /* HUDKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EE504B82D583CA10042B333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EE5049E2D583CA00042B333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EE504A52D583CA00042B333;
+			remoteInfo = wormhole;
+		};
+		6EE504C22D583CA10042B333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EE5049E2D583CA00042B333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EE504A52D583CA00042B333;
+			remoteInfo = wormhole;
+		};
+		A1C11D012D583CA00042B00C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EE5049E2D583CA00042B333 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C11D012D583CA00042B004;
+			remoteInfo = portal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1C11D012D583CA00042B00A /* Embed portal CLI */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				A1C11D012D583CA00042B00B /* portal in Embed portal CLI */,
+			);
+			name = "Embed portal CLI";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6EE504A62D583CA00042B333 /* wormhole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wormhole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE504B72D583CA10042B333 /* wormholeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wormholeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE504C12D583CA10042B333 /* wormholeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wormholeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C11D012D583CA00042B001 /* portal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = portal; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6EE504D92D583E810042B333 /* Exceptions for "wormhole" folder in "wormhole" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6EE504A52D583CA00042B333 /* wormhole */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6EE504A82D583CA00042B333 /* wormhole */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6EE504D92D583E810042B333 /* Exceptions for "wormhole" folder in "wormhole" target */,
+			);
+			path = wormhole;
+			sourceTree = "<group>";
+		};
+		6EE504BA2D583CA10042B333 /* wormholeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = wormholeTests;
+			sourceTree = "<group>";
+		};
+		6EE504C42D583CA10042B333 /* wormholeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = wormholeUITests;
+			sourceTree = "<group>";
+		};
+		A1C11D012D583CA00042B002 /* PortalCore */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PortalCore;
+			sourceTree = "<group>";
+		};
+		A1C11D012D583CA00042B003 /* portal */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = portal;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EE504A32D583CA00042B333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE504D72D583D0E0042B333 /* Sparkle in Frameworks */,
+				B7D00A012E8A10000042C001 /* HUDKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE504B42D583CA10042B333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE504BE2D583CA10042B333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C11D012D583CA00042B006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EE5049D2D583CA00042B333 = {
+			isa = PBXGroup;
+			children = (
+				6EE504A82D583CA00042B333 /* wormhole */,
+				A1C11D012D583CA00042B002 /* PortalCore */,
+				A1C11D012D583CA00042B003 /* portal */,
+				6EE504BA2D583CA10042B333 /* wormholeTests */,
+				6EE504C42D583CA10042B333 /* wormholeUITests */,
+				6EE504D52D583D0E0042B333 /* Frameworks */,
+				6EE504A72D583CA00042B333 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EE504A72D583CA00042B333 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EE504A62D583CA00042B333 /* wormhole.app */,
+				6EE504B72D583CA10042B333 /* wormholeTests.xctest */,
+				6EE504C12D583CA10042B333 /* wormholeUITests.xctest */,
+				A1C11D012D583CA00042B001 /* portal */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EE504D52D583D0E0042B333 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EE504A52D583CA00042B333 /* wormhole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE504CB2D583CA10042B333 /* Build configuration list for PBXNativeTarget "wormhole" */;
+			buildPhases = (
+				6EE504A22D583CA00042B333 /* Sources */,
+				6EE504A32D583CA00042B333 /* Frameworks */,
+				6EE504A42D583CA00042B333 /* Resources */,
+				A1C11D012D583CA00042B00A /* Embed portal CLI */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1C11D012D583CA00042B00D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6EE504A82D583CA00042B333 /* wormhole */,
+				A1C11D012D583CA00042B002 /* PortalCore */,
+			);
+			name = wormhole;
+			packageProductDependencies = (
+				6EE504D62D583D0E0042B333 /* Sparkle */,
+				B7D00A012E8A10000042C003 /* HUDKit */,
+			);
+			productName = wormhole;
+			productReference = 6EE504A62D583CA00042B333 /* wormhole.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EE504B62D583CA10042B333 /* wormholeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE504CE2D583CA10042B333 /* Build configuration list for PBXNativeTarget "wormholeTests" */;
+			buildPhases = (
+				6EE504B32D583CA10042B333 /* Sources */,
+				6EE504B42D583CA10042B333 /* Frameworks */,
+				6EE504B52D583CA10042B333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EE504B92D583CA10042B333 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6EE504BA2D583CA10042B333 /* wormholeTests */,
+			);
+			name = wormholeTests;
+			packageProductDependencies = (
+			);
+			productName = wormholeTests;
+			productReference = 6EE504B72D583CA10042B333 /* wormholeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6EE504C02D583CA10042B333 /* wormholeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE504D12D583CA10042B333 /* Build configuration list for PBXNativeTarget "wormholeUITests" */;
+			buildPhases = (
+				6EE504BD2D583CA10042B333 /* Sources */,
+				6EE504BE2D583CA10042B333 /* Frameworks */,
+				6EE504BF2D583CA10042B333 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EE504C32D583CA10042B333 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6EE504C42D583CA10042B333 /* wormholeUITests */,
+			);
+			name = wormholeUITests;
+			packageProductDependencies = (
+			);
+			productName = wormholeUITests;
+			productReference = 6EE504C12D583CA10042B333 /* wormholeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A1C11D012D583CA00042B004 /* portal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1C11D012D583CA00042B009 /* Build configuration list for PBXNativeTarget "portal" */;
+			buildPhases = (
+				A1C11D012D583CA00042B005 /* Sources */,
+				A1C11D012D583CA00042B006 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A1C11D012D583CA00042B002 /* PortalCore */,
+				A1C11D012D583CA00042B003 /* portal */,
+			);
+			name = portal;
+			packageProductDependencies = (
+			);
+			productName = portal;
+			productReference = A1C11D012D583CA00042B001 /* portal */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EE5049E2D583CA00042B333 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					6EE504A52D583CA00042B333 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					6EE504B62D583CA10042B333 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 6EE504A52D583CA00042B333;
+					};
+					6EE504C02D583CA10042B333 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 6EE504A52D583CA00042B333;
+					};
+					A1C11D012D583CA00042B004 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 6EE504A12D583CA00042B333 /* Build configuration list for PBXProject "wormhole" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EE5049D2D583CA00042B333;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6EE504D42D583D050042B333 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				B7D00A012E8A10000042C002 /* XCLocalSwiftPackageReference "../hudkit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6EE504A72D583CA00042B333 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EE504A52D583CA00042B333 /* wormhole */,
+				6EE504B62D583CA10042B333 /* wormholeTests */,
+				6EE504C02D583CA10042B333 /* wormholeUITests */,
+				A1C11D012D583CA00042B004 /* portal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EE504A42D583CA00042B333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE504B52D583CA10042B333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE504BF2D583CA10042B333 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EE504A22D583CA00042B333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE504B32D583CA10042B333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE504BD2D583CA10042B333 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C11D012D583CA00042B005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EE504B92D583CA10042B333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EE504A52D583CA00042B333 /* wormhole */;
+			targetProxy = 6EE504B82D583CA10042B333 /* PBXContainerItemProxy */;
+		};
+		6EE504C32D583CA10042B333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EE504A52D583CA00042B333 /* wormhole */;
+			targetProxy = 6EE504C22D583CA10042B333 /* PBXContainerItemProxy */;
+		};
+		A1C11D012D583CA00042B00D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1C11D012D583CA00042B004 /* portal */;
+			targetProxy = A1C11D012D583CA00042B00C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6EE504C92D583CA10042B333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EE504CA2D583CA10042B333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6EE504CC2D583CA10042B333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = wormhole/wormhole.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_ASSET_PATHS = "\"wormhole/Preview Content\"";
+				DEVELOPMENT_TEAM = M2JNHSR23U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wormhole/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = wormhole;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JER.wormhole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6EE504CD2D583CA10042B333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = wormhole/wormhole.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_ASSET_PATHS = "\"wormhole/Preview Content\"";
+				DEVELOPMENT_TEAM = M2JNHSR23U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = wormhole/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = wormhole;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JER.wormhole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6EE504CF2D583CA10042B333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2JNHSR23U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JER.wormholeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wormhole.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wormhole";
+			};
+			name = Debug;
+		};
+		6EE504D02D583CA10042B333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2JNHSR23U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JER.wormholeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wormhole.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/wormhole";
+			};
+			name = Release;
+		};
+		6EE504D22D583CA10042B333 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2JNHSR23U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JER.wormholeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = wormhole;
+			};
+			name = Debug;
+		};
+		6EE504D32D583CA10042B333 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2JNHSR23U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JER.wormholeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = wormhole;
+			};
+			name = Release;
+		};
+		A1C11D012D583CA00042B007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2JNHSR23U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				PRODUCT_BUNDLE_IDENTIFIER = JER.wormhole.portal;
+				PRODUCT_NAME = portal;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1C11D012D583CA00042B008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M2JNHSR23U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				PRODUCT_BUNDLE_IDENTIFIER = JER.wormhole.portal;
+				PRODUCT_NAME = portal;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EE504A12D583CA00042B333 /* Build configuration list for PBXProject "wormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE504C92D583CA10042B333 /* Debug */,
+				6EE504CA2D583CA10042B333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE504CB2D583CA10042B333 /* Build configuration list for PBXNativeTarget "wormhole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE504CC2D583CA10042B333 /* Debug */,
+				6EE504CD2D583CA10042B333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE504CE2D583CA10042B333 /* Build configuration list for PBXNativeTarget "wormholeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE504CF2D583CA10042B333 /* Debug */,
+				6EE504D02D583CA10042B333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE504D12D583CA10042B333 /* Build configuration list for PBXNativeTarget "wormholeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE504D22D583CA10042B333 /* Debug */,
+				6EE504D32D583CA10042B333 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1C11D012D583CA00042B009 /* Build configuration list for PBXNativeTarget "portal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C11D012D583CA00042B007 /* Debug */,
+				A1C11D012D583CA00042B008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B7D00A012E8A10000042C002 /* XCLocalSwiftPackageReference "../hudkit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../hudkit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6EE504D42D583D050042B333 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6EE504D62D583D0E0042B333 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6EE504D42D583D050042B333 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		B7D00A012E8A10000042C003 /* HUDKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HUDKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6EE5049E2D583CA00042B333 /* Project object */;
+}

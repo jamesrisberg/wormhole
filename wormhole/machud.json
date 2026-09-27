@@ -1,0 +1,32 @@
+{
+  "id": "JER.wormhole",
+  "name": "Wormhole",
+  "socket": "wormhole",
+  "panels": [
+    {
+      "id": "portal",
+      "title": "Portal",
+      "symbol": "circle.dotted",
+      "defaultSize": [
+        220,
+        220
+      ],
+      "compactSize": [
+        72,
+        72
+      ],
+      "capabilities": [
+        "acceptsFileDrop"
+      ],
+      "verbs": [
+        "show",
+        "hide",
+        "toggle",
+        "frame",
+        "mode",
+        "select-set"
+      ],
+      "kind": "windowed"
+    }
+  ]
+}

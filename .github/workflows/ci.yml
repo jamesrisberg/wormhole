@@ -1,0 +1,33 @@
+# CI for Wormhole, adapted from HUDKit's scripts/hud-ci.yml for an Xcode project:
+# wormhole.xcodeproj references HUDKit as a local package at ../hudkit, so HUDKit is
+# checked out next to the app. Builds are ad-hoc signed (no team or certificates on
+# the runner); UI tests need a logged-in display and are skipped.
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: macos-26
+    env:
+      SIGNING: CODE_SIGN_IDENTITY=- CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM= PROVISIONING_PROFILE_SPECIFIER=
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: ${{ github.event.repository.name }}
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/hudkit
+          path: hudkit
+      - run: xcodebuild -version
+      - name: Build
+        working-directory: ${{ github.event.repository.name }}
+        run: |
+          xcodebuild -project wormhole.xcodeproj -scheme wormhole -configuration Debug \
+            -destination 'platform=macOS' -derivedDataPath "$RUNNER_TEMP/dd" $SIGNING build
+      - name: Unit tests
+        working-directory: ${{ github.event.repository.name }}
+        run: |
+          xcodebuild -project wormhole.xcodeproj -scheme wormhole -configuration Debug \
+            -destination 'platform=macOS' -derivedDataPath "$RUNNER_TEMP/dd" $SIGNING \
+            -only-testing:wormholeTests test
