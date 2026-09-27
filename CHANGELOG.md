@@ -8,6 +8,8 @@ This file was reconstructed from `git log` on 2026-09-26.
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-09-26
+
 ### Added
 - Portal sets (`portals.json` version 2): ordered selections of portals, each
   with an optional Shift/Option/Control modifier that swaps the set in while held.
