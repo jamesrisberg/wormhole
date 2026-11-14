@@ -8,6 +8,11 @@ This file was reconstructed from `git log` on 2026-09-26.
 
 ## [Unreleased]
 
+## [1.3.1] - 2026-11-14
+
+### Changed
+- Updated shared window handling with HUDKit 0.5.2.
+
 ## [1.3.0] - 2026-09-26
 
 ### Added
