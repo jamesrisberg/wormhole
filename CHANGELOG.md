@@ -4,9 +4,13 @@ All notable changes to Wormhole are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). The current version is
 in [VERSION](VERSION), which mirrors `MARKETING_VERSION` in the Xcode project.
 Released builds are listed in [releases/appcast.xml](releases/appcast.xml).
-This file was reconstructed from `git log` on 2026-09-26.
 
 ## [Unreleased]
+
+## [1.3.2] - 2026-11-14
+
+### Changed
+- Updated shared window handling with HUDKit 0.5.3.
 
 ## [1.3.1] - 2026-11-14
 
